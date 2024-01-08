@@ -1,0 +1,84 @@
+= Capybara Style Guide
+:idprefix:
+:idseparator: -
+:sectanchors:
+:sectlinks:
+:toc: preamble
+:toclevels: 1
+ifndef::backend-pdf[]
+:toc-title: pass:[<h2>Table of Contents</h2>]
+endif::[]
+:source-highlighter: rouge
+
+== Introduction
+
+[quote, Officer Alex J. Murphy / RoboCop]
+____
+Role models are important.
+____
+
+ifdef::env-github[]
+TIP: You can find a beautiful version of this guide with much improved navigation at https://capybara.rubystyle.guide.
+endif::[]
+
+This Capybara style guide outlines the recommended best practices for real-world programmers to write code that can be maintained by other real-world programmers.
+
+https://github.com/rubocop/rubocop[RuboCop], a static code analyzer (linter) and formatter, has a https://github.com/rubocop/rubocop-capybara[`rubocop-capybara`] extension, provides a way to enforce the rules outlined in this guide.
+
+You can generate a PDF copy of this guide using https://asciidoctor.org/docs/asciidoctor-pdf/[AsciiDoctor PDF], and an HTML copy https://asciidoctor.org/docs/convert-documents/#converting-a-document-to-html[with] https://asciidoctor.org/#installation[AsciiDoctor] using the following commands:
+
+[source,shell]
+----
+# Generates README.pdf
+asciidoctor-pdf -a allow-uri-read README.adoc
+
+# Generates README.html
+asciidoctor README.adoc
+----
+
+[TIP]
+====
+Install the `rouge` gem to get nice syntax highlighting in the generated document.
+
+[source,shell]
+----
+gem install rouge
+----
+====
+
+== Related Guides
+
+* https://rubystyle.guide[Ruby Style Guide]
+* https://rspec.rubystyle.guide[RSpec Style Guide]
+* https://rails.rubystyle.guide[Rails Style Guide]
+* https://minitest.rubystyle.guide[Minitest Style Guide]
+
+== Contributing
+
+Nothing written in this guide is set in stone.
+Everyone is welcome to contribute, so that we could ultimately create a resource that will be beneficial to the entire Ruby community.
+
+Feel free to open tickets or send pull requests with improvements.
+Thanks in advance for your help!
+
+You can also support the project (and RuboCop) with financial contributions via https://www.patreon.com/bbatsov[Patreon].
+
+=== How to Contribute?
+
+It's easy, just follow the contribution guidelines below:
+
+* https://docs.github.com/en/get-started/quickstart/fork-a-repo[Fork] the https://github.com/rubocop/rspec-style-guide[project] on GitHub
+* Make your feature addition or bug fix in a feature branch
+* Include a http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html[good description] of your changes
+* Push your feature branch to GitHub
+* Send a https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests[Pull Request]
+
+== License
+
+image:https://i.creativecommons.org/l/by/3.0/88x31.png[Creative Commons License]
+This work is licensed under a http://creativecommons.org/licenses/by/3.0/deed.en_US[Creative Commons Attribution 3.0 Unported License]
+
+
+== Credit
+
+TBC!
