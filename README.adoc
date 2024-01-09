@@ -46,6 +46,51 @@ gem install rouge
 ----
 ====
 
+== A Living Document
+
+This guide is work in progress - trying to fill in the arguments by which the rubocop-capbyara cops were written so that users can undestand the tradeoffs on different approaches (whether to configure, enable or disable different cops)  and understand where it's a question of consistency and/or style, or are there other issues at play.
+
+== Using Capybara
+
+=== Use a specific click_link or click_button to surface accessibility issues[[click-link-or-button-specificity]]
+(corresponds to Capybara/ClickLinkOrButtonStyle)
+
+=== But if you do use a generic click then use a consistent method[[click-link-or-button-consistency]]
+(also corresponds to Capybara/ClickLinkOrButtonStyle)
+
+=== Don't set expectations on Capybara `current_path`
+(corresponds to Capybara/CurrentPathExpectation)
+
+=== Don't use deprecated style methods
+(corresponds to Capybara/MatchStyle)
+
+=== Either use of `have_no_*` or use `not_to` consistently for negated expectations[[negation-matcher-consistency]]
+(corresponds to Capybara/NegationMatcher)
+
+=== Be concise: don't use redundant withins[[no-redundant-within-finds]]
+(corresponds to Capybara/RedundantWithinFind)
+
+=== Be specific: Use the most specific action rather than a generic action with parameters.[[specific-action]]
+(corresponds to Capybara/SpecificActions)
+
+=== Be specific: Use the most specific finder rather than a generic finder with parameters[[specific-finder]]
+(corresponds to Capybara/SpecificFinders)
+
+=== Be specific: Use the most specific matcher rather than a generic matcher with parameters[[specific-matcher]]
+(corresponds to Capybara/SpecificMatcher)
+
+=== Don't use visible: false in Capybara finders, instead use a specific visibility symbol[[visibility-matcher-specificity]]
+(corresponds to Capybara/VisibilityMatcher)
+
+== Using Capybara with RSpec
+
+=== Use `have_css` or `have_xpath` instead of `have_selector`[[dont-use-have-selector]]
+(corresponds to Capybara/RSpec/HaveSelector)
+
+=== Prefer using predicate matcher over using predicate method directly[[predicate-matcher-rather-than-method]]
+(corresponds to Capybara/RSpec/PredicateMatcher)
+
+
 == Related Guides
 
 * https://rubystyle.guide[Ruby Style Guide]
