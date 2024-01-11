@@ -48,7 +48,7 @@ gem install rouge
 
 == A Living Document
 
-This guide is work in progress - trying to fill in the arguments by which the rubocop-capbyara cops were written so that users can undestand the tradeoffs on different approaches (whether to configure, enable or disable different cops)  and understand where it's a question of consistency and/or style, or are there other issues at play.
+This guide is work in progress - trying to fill in the arguments by which the rubocop-capbyara cops were written so that users can understand the tradeoffs on different approaches (whether to configure, enable or disable different cops)  and understand where it's a question of consistency and/or style, or are there other issues at play.
 
 == Using Capybara
 
