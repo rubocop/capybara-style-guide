@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.repository == 'rubocop/capybara-style-guide' && !startsWith(github.event_name, 'pull') }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.4"
