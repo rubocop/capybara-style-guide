@@ -22,7 +22,7 @@ jobs:
           bundler-cache: true
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: AsciiDoc to HTML
         run: bundle exec asciidoctor -a toc="left" -a toclevels=2 README.adoc -o _site/index.html
       - uses: actions/upload-pages-artifact@v4
